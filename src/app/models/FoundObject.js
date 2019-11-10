@@ -10,6 +10,9 @@ const FoundObjectSchema = new Schema(
       type: String,
       required: true
     },
+    phone: {
+      type: String
+    },
     imageId: {
       type: String,
       unique: true,
