@@ -3,7 +3,7 @@ module.exports = {
     if (req.file) {
       const imageId = req.file.filename;
 
-      return res.json(imageId);
+      return res.status(201).json(imageId);
     }
     return res.status(400).json({ message: "Error to upload image." });
   }
