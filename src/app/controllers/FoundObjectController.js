@@ -6,10 +6,11 @@ module.exports = {
     if (req.query.busca) {
       foundObjects = await FoundObject.find({
         title: new RegExp(req.query.busca, "i")
-      });
+      }).sort({ title: "desc" });
     } else {
-      foundObjects = await FoundObject.find({});
+      foundObjects = await FoundObject.find({}).sort({ title: "desc" });
     }
+
     return res.status(200).json(foundObjects);
   },
 
