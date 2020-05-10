@@ -1,4 +1,4 @@
-const allowedUsers = [{ username: "gfnascimento", password: "gfn14052004" }];
+const allowedUsers = [{ username: "gfnascimento", password: "gfn14052004" },{ username: "dinho", password: "abcd1234" }];
 
 module.exports = {
   async store(req, res) {
